@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <title> Generator Project</title>
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+ <script>
+  //our own jQuery
+  $(function() {
+   $('h1').css('text-align', 'center');
+
+   $('button').click(function(){
+   var job = $('#job').val();
+   var name = $('#name').val();
+   var color = $('#color').val();
+   var previous = $('#previous').val();
+   var reason = $('#reason').val();
+ 
+
+ $('h2').html( name)
+ $('h3').html( job)
+ $('h4').html(reason)
+ $('h5').html( previous)
+console.log(color)
+$('div').css('background-color',color);
+
+
+ });
+  });
+ </script>
+  <style>
+   div {
+    background-color: grey;
+   padding: 0px;
+     width: 500px;
+    box-shadow: 5px 5px;
+   }
+    
+    body {
+    background-color: orange;
+    }
+  h2{
+   font-size:45px;
+   text-align:center ;
+   margin-bottom:80px;
+  }
+   h3{
+   
+     padding-top:10;
+     margin-bottom:90px;
+   } 
+    h4{
+      font-size:25px;
+    
+      
+    }
+    h5{
+      text-align:right ;
+      font-size:15px;
+    }
+    
+  </style>
+</head>
+
+<body>
+ <h1> Employee Of The Month Resume</h1>
+ Full Name: <input id="name"><br>  Current Job: <input id="job"><br>
+ Resume Color: <input id="color"><br> Previous Job: <input id="previous"><br> 
+Why Do You Deserve The Job: <input id="previous"><br> 
+ <button>Complete Resume</button>
+
+<div>
+<h2></h2>
+ <h3></h3>
+ <h4></h4>
+ <h5></h5>
+</div>
+</body>
+
+</html>
